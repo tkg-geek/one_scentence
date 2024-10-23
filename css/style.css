@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+body {
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+main {
+    width: 360px;
+    max-width: 90%;
+    margin: 130px 0;
+}
+
+#logo-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#logo {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+}
+
+#input-container {
+    width: 100%;
+}
+
+.cp_iptxt {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.cp_iptxt input[type='text'] {
+    font: 15px/1.6 sans-serif;
+    width: 100%;
+    padding-left: 1em;
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: text;
+}
+
+.cp_iptxt .focus_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #aaaaaa;
+    transition: width 0.4s, background-color 0.4s;
+}
+
+.cp_iptxt input[type='text']:focus~.focus_line {
+    background-color: #d94a2e;
+    width: 100%;
+}
+
+button.remove-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+button.remove-btn:hover {
+    color: #d96634;
+}
+
+button.remove-btn:active {
+    color: #dfacaf;
+}
+
+.add-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.add-button-container button {
+    background: transparent;
+    border: 1.5px solid #555;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    color: #555;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.add-button-container button:hover {
+    color: #d94a2e;
+    border: 1.5px solid #d94a2e;
+}
+
+.add-button-container button:active {
+    color: #dfacaf;
+    border: 1.5px solid #dfacaf;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.fixed-btn {
+    border: 1.5px solid #b881b6;
+    /* 初期のボーダー色 */
+    position: fixed;
+    bottom: 16px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    /* 背景色なし */
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    /* ボーダー色の変化を追加 */
+}
+
+.fixed-btn:hover {
+    background-color: #fdeff2;
+    transition: all 0.3s;
+}
+
+.fixed-btn:active {
+    background-color: transparent;
+    opacity: 0.8;
+}
+
+.fixed-btn i {
+    background: linear-gradient(90deg, #b881b6, #d94a2e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s ease;
+}
+
+.fixed-btn.left {
+    left: 16px;
+}
+
+.fixed-btn.right {
+    right: 16px;
+}
+
+.fixed-btn.center {
+    left: calc(50% - 24px);
+    /* ボタンの幅の半分を引いた位置で中央に配置 */
+}
+
+/* フルスクリーン表示用スタイル */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.fullscreen-text {
+    font-size: clamp(2rem, -1.406rem + 17.03vw, 15.625rem);
+    text-align: center;
+    padding: 20px;
+}

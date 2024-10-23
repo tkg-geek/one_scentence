@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>one sentence</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <div id="logo-container">
+        <img src="img/onesentence_logo.png" alt="ロゴ" id="logo" />
+      </div>
+
+      <div id="input-container">
+        <div class="cp_iptxt">
+          <input class="ef" type="text" placeholder="" />
+          <span class="focus_line"></span>
+          <button class="remove-btn" aria-label="Remove">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+      <div class="add-button-container">
+        <button id="add"><i class="fas fa-plus"></i></button>
+      </div>
+      <button id="reset" class="fixed-btn left">
+        <i class="fas fa-trash"></i>
+      </button>
+      <button id="play" class="fixed-btn right">
+        <i class="fas fa-play"></i>
+      </button>
+      <button id="save" class="fixed-btn center">
+        <i class="fa fa-cloud-arrow-up"></i>
+      </button>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
