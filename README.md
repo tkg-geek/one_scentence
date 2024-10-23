@@ -1,4 +1,7 @@
 ![](https://img.shields.io/badge/html-5.0-green)
+![](https://img.shields.io/badge/css-blue)
+![](https://img.shields.io/badge/JavaScript-orange)
+![](https://img.shields.io/badge/LocalStorage-purple)
 
 ## ① 課題名
 
