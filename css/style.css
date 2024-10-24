@@ -187,7 +187,7 @@ button {
 }
 
 .fullscreen-text {
-    font-size: clamp(2rem, -1.306rem + 12vw, 15.625rem);
+    font-size: clamp(2.4rem, -1.306rem + 12.5vw, 15.625rem);
     text-align: center;
     padding: 20px;
 }
